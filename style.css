@@ -1,71 +1,332 @@
-* {
-    text-align: center;
+html {
+  scroll-behavior: smooth;
+}
+
+
+p {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    /* text-align: center; */
     font-family: "Playfair Display", serif;
-    margin: 0px;
-    padding: 0px;
-}
-
-.basliklar{
-    color: white;
-    background-color: rgb(0, 0, 0);
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-}
-
-.ikinci-kisim {
-    object-fit: cover;
-    background-color: #000000
-    /* display: block;
-    margin: 0 auto;      
+    margin: 0;
     padding: 0;
-    border: none;
-    max-width: 100%;     
-    height: auto;  */
+    /* background-color: #000000; */
+    overflow-x: hidden;
+}
     
+    /* Nav Bilgi Hakkımızda logo */
+
+/* NAV */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 100%;
 }
 
-#nichee {
-    color: white;
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 15px 60px;  /*biraz kenarlardan boşluk */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-sizing: border-box;
 }
 
-img {
-    height: 500px;
-    width: 330px;
+.logo {
+  color: white; 
+  font-size: 20px;
+  font-weight: bold;
 }
 
-#niche {
-    height: 500px;
-    width: 500px;
+.nav-links {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-end;
 }
 
-.ürünler {
-  font-size: 2rem
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.bilgi {
-    text-align: left;
-}
-
-#urunlerimiz {
-    text-align: left;
-    background-color: #181C14;
-    border: 1px solid white;
-    padding: 20px;
-}
-
-.paytak-background {
-    background-color: #181C14;
-}
-
-.panda-background {
-    background-color: #3C3D37;
-}
-
-.uzanan-panda-background {
+    /* Video Header */  
+.video-header {
+    overflow-x: hidden;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
     background-color: #000000;
 }
 
-.bilgisel {
-    background-color: blanchedalmond;
+.video-header video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
 }
+
+        /* Buton */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0,3);
+    color: white;
+    text-align: center;
+}
+
+.Pure-Vision {
+    font: 4rem;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.Learn-More {
+    background-color: transparent;
+    border: 2px solid black;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Learn-More:hover {
+    background-color: white;
+    color: black;
+}
+
+ /* Ürünlerimiz yazısı */
+#urunlerimiz {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  background: rgba(0, 0, 0, 0.05);
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+#urunlerimiz:hover {
+  background: rgba(0, 0, 0, 0.1);
+  transform: scale(1.03);
+}
+
+.urun-alt-baslik {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin-top: -10px;
+  margin-bottom: 40px;
+}
+
+/* Ürün Fotoğrafları */
+
+.urun-fotolar {
+    border: none;
+    border-radius: 20px;
+    height: auto;
+    width: 400px;
+    transition: transform 0.4s ease;
+}
+
+.urun-fotolar:hover {
+    transform: scale(1.05);
+ }
+
+/* Main Ürünler */
+.ürünler-isimleri {
+    transition: color 0.3s ease;
+    font-size: 2rem
+
+}
+
+.ürünler-isimleri:hover {
+    color: gray;
+} 
+
+        /* Paytak */
+ #paitak {
+    margin: 0;
+    height: auto;
+    width: 450px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+#paytak {
+    color: black;
+    position: relative;
+    left: 40%;
+    bottom: 500px;
+}
+.paytak-background {
+    margin: 0;
+    background-color: white;
+}
+
+.paytak-background p {
+    color: black;
+    position: relative;
+    left: 40%;
+    bottom: 475px;
+}
+
+        /* Panda */
+
+ #panda {
+    color: white;
+    position: relative;
+    left: 15%;
+    bottom: 600px;
+}
+
+.panda-background p {
+    color: white;
+    position: relative;
+    left: 15%;
+    bottom: 550px;
+}
+
+#penda {
+    position: relative;
+    left: 70%;
+    top: 100px; 
+}
+
+.panda-background {
+    margin: 0;
+    background-color: #000000;
+}
+
+        /* Uzanan Panda */
+ .uzanan-panda-background {
+    position: relative;
+    margin: 0;
+    background-color: white;
+}
+
+.uzanan-panda-background p {
+    position: relative;
+    left: 510px;
+    bottom: 520px;
+}
+
+#uzanan-penda {
+    position: relative;
+    left: 50px;
+    top: 125px;
+}
+
+#uzananpanda {
+    position: relative;
+    left: 510px;
+    bottom: 545px;
+}
+
+.paytak-background,
+.panda-background,
+.uzanan-panda-background {
+    transition: background-color 0.8s ease;
+}
+
+.gecis-baslik {
+  text-align: center;
+  padding: 60px 0 20px;
+  color: #333;
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 20px;
+}
+
+
+/* Hakkımda */
+.hakkimda-background {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hakkimda-baslik {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border: 2px solid black;
+}
+
+.hakkimda-foto {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.hakkimda-yazi {
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #333;
+}
+
+
+/* İletişim */
+
+.iletisim-background {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.iletisim-baslik {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.iletisim-yazi {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.iletisim-bilgi {
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+footer {
+    text-align: center;
+    color: black;
+}
+

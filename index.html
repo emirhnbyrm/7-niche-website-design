@@ -5,43 +5,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>7 Niche</title>
     <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="basliklar">
-        <h1 id="nichee">The 7 Niche's</h1>
-    </div>
 
-    <hr>
+<!-- Nav Bölümü -->
+    <div class="navbar-container">
+    <div class="logo">The 7 Niche's Portfolio</div>
+    <div class="nav-links">
+        <a href="#anasayfa">Anasayfa</a>
+        <a href="#urunlerimizz">Ürünlerimiz</a>
+        <a href="#hakkimda">Hakkımda</a>
+        <a href="#iletisim">İletişim</a>
+        </div>  
+</div>
+    <!-- Header Bölümü -->
+    <section id="anasayfa">
+        <header>
+            <div class="video-header">
+        <video autoplay muted loop playsinline src="./assets/Videolar/7 Niche Tanıdıtım Header Video.MP4"></video>
 
-    <div class="ikinci-kisim">
-        <video autoplay muted loop playsinline src="./assets/images/video penda.mp4"></video>
-    </div>
+        <div class="overlay">
+            <h1 class="Pure-Vision">Pure Vision</h1>
+            <button class="Learn-More" onclick="scrollToContent()">Learn More</button>
+        </div>
 
-    <div class="basliklar">
+            </div>
+        </header>
+    </section>
+    
+<!-- ÜRÜNLER BÖLÜMÜ -->
+    <!--Ürünler Yazısı -->
+    <section id="urunlerimizz">
         <h2 id="urunlerimiz">Ürünlerimiz..</h2>
-    </div>
+        <p class="urun-alt-baslik">Sadelik ve estetikle tasarlanmış özel koleksiyon.</p>
 
+<!-- Ürünler -->
+
+         <!-- Paytak -->
         <div class="paytak-background">
             <img class="urun-fotolar" id="paitak" src="./assets/images/Paytak.png" alt="Ördek"></a>
-            <h2><a class="ürünler" id="paytak" href="./public/paytak.html">Paytak</a><br></h2>
+            <h2 class="ürünler-isimleri" id="paytak">Paytak</h2>
+            <p>
+                Paytak, gecenin huzurunu odanıza taşıyan sevimli bir gece lambasıdır. <br>  
+                Sade tasarımı, yumuşak ışığı ve minimal hatlarıyla hem çocuk odalarına <br>
+                hem de modern yaşam alanlarına sıcak bir atmosfer kazandırır.<br>
+                Dayanıklı silikon yüzeyi ve enerji tasarruflu LED yapısı sayesinde <br> 
+                uzun süre konforlu bir kullanım sunar. Bir lambadan çok,<br>
+                gecenize eşlik eden bir dost gibi ışıldar. <br>
+                Paytak ile geceler artık hem aydınlık hem de huzurlu.
+            </p>
         </div>
-  
+        <!-- Panda -->
         <div class="panda-background">
             <img class="urun-fotolar" id="penda" src="./assets/images/Panda.png" alt="Panda"></a>
-            <h2><a class="ürünler" id="panda" href="./public/panda.html">Panda</a><br></h2>
+            <h2 class="ürünler-isimleri" id="panda">Panda</h2>
+            <p>
+                Panda, sadeliği ve estetiği aynı potada buluşturan bir tasarım harikasıdır. <br>
+                Minimal formu, yumuşak beyaz ışığı ve şirin ifadesiyle bulunduğu ortama <br>
+                zarif bir denge kazandırır. Göz yormayan doğal ışığı sayesinde <br> 
+                hem kitap okuma zamanlarında hem de uyku öncesi anlarda <br> 
+                mükemmel bir atmosfer oluşturur. Her detayıyla modern yaşamın <br> 
+                sade zarafetini temsil eder. Panda, sadece bir ışık değil, <br> 
+                sakinliğin ve estetiğin bir yansımasıdır.
+            </p>
+
         </div>
- 
+        <!-- Uzanan Panda -->
         <div class="uzanan-panda-background">
-            <img class="urun-fotolar" id="uzanan-penda" src="./assets/images/uzananpanda.png" alt=""></a>
-            <h2><a class="ürünler" id="uzananpanda" href="./public/uzananpanda.html">Uzanan Panda</a><br></h2>
+            <img class="urun-fotolar" id="uzanan-penda" src="./assets/images/uzananpanda.png" alt="Uzanan Panda"></a>
+            <h2 class="ürünler-isimleri" id="uzananpanda">Uzanan Panda</h2>
+            <p class="panda-p"> 
+                Uzanan Panda, rahatlığın ve huzurun sembolü olarak tasarlandı. <br>
+                Sırtüstü uzanmış formu, ortama samimi bir karakter katar; <br> 
+                ister çalışma masasında ister yatak odasında olsun, <br> 
+                bulunduğu yeri sıcak bir hale getirir. Yumuşak dokusu ve hafif ışığı, <br> 
+                stresli bir günün ardından gevşemenize yardımcı olur. Ayrıca dekoratif görünümüyle <br> 
+                her ortama estetik bir dokunuş ekler. Uzanan Panda ile sadece bir ışık değil, <br> 
+                huzurlu bir ambiyans yaratın.
+            </p>
+
+        </div>
+    </section>
+<!-- Geçiş Başlığıı -->
+        <div class="gecis-baslik">
+        <h3>Markamızı Daha Yakından Tanıyın</h3>
         </div>
 
-    <div class="bilgisel">
-        <h4 class="bilgi" id="bizeulaşın"><a href="./public/contact.html">Bize Ulaşın</a></h4>
-        <h4 class="bilgi" id="hakkimizda"><a href="./public/about.html">Hakkımızda</a></h4>
-    </div>
+<!-- HAKKIMDA -->
+<div class="hakkimda-background" id="hakkimda">
+
+    <h2 class="hakkimda-baslik">Hakkımda</h2>
+    <img class="hakkimda-foto" src="./assets/images/7 niche sade zarafer.jpg" alt="Profil Fotoğrafım">
+    <p class="hakkimda-yazi">
+    7 Niche, estetikle işlevselliği birleştiren modern bir yaşam markasıdır.
+    Her bir ürün, sade ama dikkat çekici tasarımıyla günlük hayata zarafet katmayı hedefler.
+    Kalite, özgünlük ve detaylara verilen önem markanın temel değerleridir.
+    7 Niche, sadece bir ürün değil; yaşam tarzını sadeleştiren bir deneyim sunar.    
+    </p>
+
+</div>
+
+<!-- İLETİŞİM -->
+<div class="iletisim-background" id="iletisim">
+
+    <h2 class="iletisim-baslik">İletişim</h2>
+    <p class="iletisim-yazi">
+    Bize ulaşmak isterseniz aşağıdaki adreslerden iletişim kurabilirsiniz:
+    </p>
+    <p class="iletisim-bilgi">
+        📧 E-posta: info@7niche.com <br>
+        📞 Telefon: +90 555 555 55 55 <br>
+        📍 Konum: Manisa, Türkiye
+    </p>
+
+</div>
+
+    <footer>
+        © 2025 7 Niche | Tüm Hakları Saklıdır.
+    </footer>
+
 </body>
 </html>
